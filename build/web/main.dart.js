@@ -72665,20 +72665,20 @@ A.Zz.prototype={
 $1(a){return B.Gm},
 $S:463}
 A.pt.prototype={
-H(a){var s=null,r=A.afs(s,new A.k_("assets/images/cover_grid_bg.png",s,s)),q=A.cM("assets/images/avatar.png",s,s,s),p=A.bg("Yurii Yudin",s,s,s,A.lD().$1$textStyle(B.jx),s,s,s),o=A.lD().$1$textStyle(B.jA)
+H(a){var s=null,r=A.afs(s,new A.k_("images/cover_grid_bg.png",s,s)),q=A.cM("images/avatar.png",s,s,s),p=A.bg("Yurii Yudin",s,s,s,A.lD().$1$textStyle(B.jx),s,s,s),o=A.lD().$1$textStyle(B.jA)
 return A.uG(A.cL(s,A.e_(A.b([B.x4,q,p,A.km("Flutter Developer",$.to,o),A.bg("I firmly believe that to achieve success, one must have a genuine passion\nfor their work. Fortunately, I'm fortunate enough to love what I do which is\nwhy I am committed to continual improvement and growth in my field...",s,s,s,A.lD().$1$textStyle(B.jw),B.al,s,s),B.bY,new A.ps(new A.Zx(),s)],t.p),B.ap,B.W,B.T),B.o,s,s,new A.cQ(B.b2,r,s,s,s,s,B.aw),s,764,B.BV,s,s,s,1025),B.c4)}}
 A.Zx.prototype={
 $0(){$.iv().l7(B.c8,B.c9,4)},
 $S:0}
 A.pv.prototype={
-H(a){var s=null,r=A.afs(s,new A.k_("assets/images/cover_grid_bg.png",s,s))
-return A.uG(A.cL(s,A.e_(A.b([B.x4,A.cM("assets/images/avatar.png",s,s,s),A.bg("Yurii Yudin",s,s,s,A.lD().$1$textStyle(B.jx),s,s,s),A.km("Flutter Developer",B.ic,A.lD().$1$textStyle(B.jA)),A.bg(u.x,s,s,s,A.lD().$1$textStyle(B.jw),B.al,s,s),B.bY,new A.ps(new A.ZC(),s)],t.p),B.ap,B.W,B.T),B.o,s,s,new A.cQ(B.b2,r,s,s,s,s,B.aw),s,764,B.BZ,s,s,s,800),B.c4)}}
+H(a){var s=null,r=A.afs(s,new A.k_("images/cover_grid_bg.png",s,s))
+return A.uG(A.cL(s,A.e_(A.b([B.x4,A.cM("images/avatar.png",s,s,s),A.bg("Yurii Yudin",s,s,s,A.lD().$1$textStyle(B.jx),s,s,s),A.km("Flutter Developer",B.ic,A.lD().$1$textStyle(B.jA)),A.bg(u.x,s,s,s,A.lD().$1$textStyle(B.jw),B.al,s,s),B.bY,new A.ps(new A.ZC(),s)],t.p),B.ap,B.W,B.T),B.o,s,s,new A.cQ(B.b2,r,s,s,s,s,B.aw),s,764,B.BZ,s,s,s,800),B.c4)}}
 A.ZC.prototype={
 $0(){$.iv().l7(B.c8,B.c9,4)},
 $S:0}
 A.pu.prototype={
-H(a){var s=null,r=A.afs(B.yG,new A.k_("assets/images/cover_grid_bg.png",s,s))
-return A.cL(s,A.uG(A.e_(A.b([A.cM("assets/images/avatar.png",s,s,s),A.bg("Yurii Yudin",s,s,s,A.lD().$1$textStyle(B.jx),s,s,s),A.km("Flutter Developer",B.ic,A.lD().$1$textStyle(B.jA)),A.bg(u.x,s,s,s,A.lD().$1$textStyle(B.jw),B.al,s,s),B.bY,new A.ps(new A.ZB(),s)],t.p),B.ap,B.W,B.T),B.yF),B.o,s,s,new A.cQ(B.b2,r,s,s,s,s,B.aw),s,564,B.C_,s,s,s,339)}}
+H(a){var s=null,r=A.afs(B.yG,new A.k_("images/cover_grid_bg.png",s,s))
+return A.cL(s,A.uG(A.e_(A.b([A.cM("images/avatar.png",s,s,s),A.bg("Yurii Yudin",s,s,s,A.lD().$1$textStyle(B.jx),s,s,s),A.km("Flutter Developer",B.ic,A.lD().$1$textStyle(B.jA)),A.bg(u.x,s,s,s,A.lD().$1$textStyle(B.jw),B.al,s,s),B.bY,new A.ps(new A.ZB(),s)],t.p),B.ap,B.W,B.T),B.yF),B.o,s,s,new A.cQ(B.b2,r,s,s,s,s,B.aw),s,564,B.C_,s,s,s,339)}}
 A.ZB.prototype={
 $0(){$.iv().l7(B.c8,B.c9,4)},
 $S:0}
@@ -72706,7 +72706,7 @@ H(a){var s,r=null,q=A.bn(a,r,t.w).w.a.a>920&&this.c.b==="Parsers/Bots",p=t.p,o=t
 o=o.c
 if(q){q=A.hw(10)
 s=$.ai_()
-s=A.cL(r,A.jh(A.b([new A.cw(B.lw,A.es(A.e_(A.b([A.cM(n,r,r,r),B.x6,A.bg(m,r,r,r,A.c6().$1$textStyle(B.xt),r,r,r),B.x5,A.bg(o,r,r,r,A.c6().$1$textStyle(B.xq),r,r,r)],p),B.dm,B.W,B.T),r,310),r),A.cM("assets/images/ai_pic.png",r,r,r)],p),B.W,B.T),B.o,r,r,new A.cQ(r,r,r,q,r,new A.fW(B.c1,B.ka,B.cX,s,r,r),B.aw),r,273,r,r,r,r,620)
+s=A.cL(r,A.jh(A.b([new A.cw(B.lw,A.es(A.e_(A.b([A.cM(n,r,r,r),B.x6,A.bg(m,r,r,r,A.c6().$1$textStyle(B.xt),r,r,r),B.x5,A.bg(o,r,r,r,A.c6().$1$textStyle(B.xq),r,r,r)],p),B.dm,B.W,B.T),r,310),r),A.cM("images/ai_pic.png",r,r,r)],p),B.W,B.T),B.o,r,r,new A.cQ(r,r,r,q,r,new A.fW(B.c1,B.ka,B.cX,s,r,r),B.aw),r,273,r,r,r,r,620)
 q=s}else{q=A.hw(10)
 s=$.ai_()
 s=A.cL(r,new A.cw(B.lw,A.e_(A.b([A.cM(n,r,r,r),B.x6,A.bg(m,r,r,r,A.c6().$1$textStyle(B.xt),r,r,r),B.x5,A.bg(o,r,r,r,A.c6().$1$textStyle(B.xq),r,r,r)],p),B.dm,B.W,B.T),r),B.o,r,r,new A.cQ(r,r,r,q,r,new A.fW(B.c1,B.ka,B.cX,s,r,r),B.aw),r,274,r,r,r,r,289)

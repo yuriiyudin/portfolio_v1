@@ -2,7 +2,7 @@ class AppAssets {
   AppAssets._();
 
 //paths
-  static const String imagesPath = 'assets/images';
+  static const String imagesPath = 'images';
   static const String projectsPath = 'images/projects';
   static const String iconsPath = 'images/icons';
 
