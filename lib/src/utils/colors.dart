@@ -8,8 +8,11 @@ class AppColors {
   static const Color scaffoldBackground = Color(0xFF1A1A1A);
   static const Color menuItemNotActive = Color(0xFFC1C1C1);
   static const Color menuItemActive = Color(0xFF4FC3F7);
+    static const Color drawerActiveText = Color(0xFF4FC3F7);
+    static const Color drawerNotActiveText = Color.fromARGB(255, 216, 211, 211);
   static const Color contactMeTopButtonBorder = Color(0xFF4FC3F7);
   static const Color mainSectionTextColor = Color(0xFFE1E1E1);
+  static  Color drawerBackground = Color(0xFF73C6D8).withOpacity(0.925);
 
   static const Color aboutMeText = Color(0xFFE1E1E1);
   static const Color serviceItemDescription = Color(0xFFE1E1E1);

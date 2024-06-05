@@ -194,7 +194,7 @@ class SocialNetworkSectionMobile extends StatelessWidget {
           ),
           const SizedBox(height: 32,),
                const Text(
-            '® 2024 All right Reserver',
+            '® 2024 All right Reservered',
             style: TextStyle(fontSize: 16, color: AppColors.allRighstColor),
           ),
         ],

@@ -11,6 +11,7 @@ import 'package:yudin_v2/src/pages/my_services_layout.dart';
 import 'package:yudin_v2/src/pages/projects_layout.dart';
 import 'package:yudin_v2/src/pages/social_network_layout.dart';
 import 'package:yudin_v2/src/utils/app_assets.dart';
+import 'package:yudin_v2/src/utils/colors.dart';
 import 'package:yudin_v2/src/utils/constant.dart';
 import 'package:yudin_v2/src/utils/globals.dart';
 import 'package:yudin_v2/src/widgets/logo_widget.dart';
@@ -75,10 +76,13 @@ class _WebSiteState extends State<WebSite> {
                           onPressed: () {
                             scaffoldKey.currentState!.openEndDrawer();
                           },
-                          icon: Image.asset(
-                            AppAssets.drawerIcon,
-                            height: 10,
-                            width: 14,
+                          icon: SizedBox(
+                            width: 16,
+                            height: 16,
+                            child: Image.asset(
+                              AppAssets.drawerIcon,
+                              fit: BoxFit.fill,
+                            ),
                           ))
                     ],
                   ),
@@ -106,19 +110,20 @@ class _WebSiteState extends State<WebSite> {
 //============= NavBar Mobile ==================
   Drawer navigationBarMobile() {
     return Drawer(
+      width: 250,
+      backgroundColor: AppColors.drawerBackground,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
-          ...List.generate(menuItems.length, (index) {
-            return Padding(
-              padding: const EdgeInsets.only(right: 50),
-              child: MenuItemButtonWidget(
-                tapButtonFnc: () => tapMenuItem(index),
-                currentStatePageindex: currentStatePageIndex,
-                itemScrollController: itemScrollController,
-                listGenerateIndex: index,
-                title: menuItems[index].title,
-              ),
+          const SizedBox(height: 30,),
+          ...List.generate(menuItemsMobile.length, (index) {
+            return MenuItemButtonWidgetMobile(
+              tapButtonFnc: () => tapMenuItem(index),
+              currentStatePageindex: currentStatePageIndex,
+              itemScrollController: itemScrollController,
+              listGenerateIndex: index,
+              title: menuItemsMobile[index].title.toUpperCase(),
             );
           }),
         ],
@@ -140,7 +145,7 @@ class _WebSiteState extends State<WebSite> {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            LogoWidgetMobile(
+            LogoWidgetDesktop(
               onTap: () {
                 itemScrollController.scrollTo(
                   index: 0,
@@ -159,15 +164,15 @@ class _WebSiteState extends State<WebSite> {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                ...List.generate(menuItems.length, (index) {
+                ...List.generate(menuItemsDesktop.length, (index) {
                   return Padding(
                     padding: const EdgeInsets.only(right: 50),
-                    child: MenuItemButtonWidget(
+                    child: MenuItemButtonWidgetDesktop(
                       tapButtonFnc: () => tapMenuItem(index),
                       currentStatePageindex: currentStatePageIndex,
                       itemScrollController: itemScrollController,
                       listGenerateIndex: index,
-                      title: menuItems[index].title,
+                      title: menuItemsDesktop[index].title,
                     ),
                   );
                 }),

@@ -96,7 +96,7 @@ class ContactFormMultiScreen extends StatelessWidget {
                   Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'example@email.com',
+                        'Email',
                         style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.white, fontSize: 18),
                       )),
                   SizedBox(
@@ -104,7 +104,7 @@ class ContactFormMultiScreen extends StatelessWidget {
                   ),
                   TextField(
                     decoration: InputDecoration(
-                      hintText: 'John Brown',
+                      hintText: 'example@email.com',
                       hintStyle: TextStyle(fontSize: 15, color: AppColors.hintForm),
                       filled: true,
                       fillColor: AppColors.scaffoldBackground,
