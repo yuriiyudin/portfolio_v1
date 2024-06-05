@@ -96,7 +96,7 @@ class ContactFormMultiScreen extends StatelessWidget {
                   Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Email',
+                        'example@email.com',
                         style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.white, fontSize: 18),
                       )),
                   SizedBox(
