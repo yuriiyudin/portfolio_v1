@@ -34,9 +34,16 @@ class _MenuItemButtonWidgetDesktopState extends State<MenuItemButtonWidgetDeskto
     );
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
+      onHover: (_) {
+        if(widget.currentStatePageindex != widget.listGenerateIndex ) {
+
+        }
+      },
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
@@ -89,21 +96,10 @@ class _MenuItemButtonWidgetMobileState extends State<MenuItemButtonWidgetMobile>
 
   Color activeColor = AppColors.drawerActiveText;
   Color notActiveColor = AppColors.drawerNotActiveText;
-  bool isHover = false;
 
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
-      onHover: (_) {
-        setState(() {
-          isHover = true;
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          isHover = false;
-        });
-      },
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
@@ -111,14 +107,16 @@ class _MenuItemButtonWidgetMobileState extends State<MenuItemButtonWidgetMobile>
           widget.tapButtonFnc();
         },
         child: Padding(
-          padding: const EdgeInsets.only(top: 10,),
+          padding: const EdgeInsets.only(
+            top: 10,
+          ),
           child: Text(
             widget.title,
             style: TextStyle(
-                fontSize: isHover ? 35 : 33,
+                fontSize: widget.listGenerateIndex == widget.currentStatePageindex ? 35 : 33,
                 fontWeight: FontWeight.w600,
                 letterSpacing: 3,
-                color: isHover ? activeColor : notActiveColor),
+                color: widget.listGenerateIndex == widget.currentStatePageindex ? AppColors.drawerActiveText : AppColors.drawerNotActiveText),
           ),
         ),
       ),

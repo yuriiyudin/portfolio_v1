@@ -10,6 +10,6 @@ const String mainSectionTextMobile =
 
 
     
-     const String aboutMeTextPartOneMobile = 'I am Ukrainian, 34 years old. Throughout the year, I\'ve been studying\nDart and Flutter, taking various courses and gaining the ability\nto write moderately complex UIs.';
-    const String aboutMeTextPartTwoMobile = 'For state management, I\'ve acquainted myself with Riverpod and utilize it.\nI understand the basic principles of Firebase.';
-    const String aboutMeTextPartThreeMobile= 'Additionally, I\'ve dabbled in creating my own Dart backend\nusing the Serverpod framework, have some experience\nwith PostgreSQL, and can work with APIs. I have strong\nknowledge of the Beautiful Soup and Puppeteer libraries for Dart.';
+     const String aboutMeTextPartOneMobile = 'I am Ukrainian, 34 years old. Throughout the year, I\'ve been\nstudying Dart and Flutter, taking various courses and gaining\nthe ability to write moderately complex UIs.';
+    const String aboutMeTextPartTwoMobile = 'For state management, I\'ve acquainted myself with Riverpod\nand utilize it. I understand the basic principles of Firebase.';
+    const String aboutMeTextPartThreeMobile= 'Additionally, I\'ve dabbled in creating my own Dart backend using\nthe Serverpod framework, have some experience with PostgreSQL,\nand can work with APIs. I have strong knowledge of the\nBeautiful Soup and Puppeteer libraries for Dart.';

@@ -14,5 +14,5 @@ List<MenuItem> menuItemsMobile = [
   MenuItem(title: 'About', index: 1),
   MenuItem(title: 'Services', index: 2),
   MenuItem(title: 'Projects', index: 3),
-  MenuItem(title: 'Concat', index: 4),
+  MenuItem(title: 'Contact', index: 4),
 ];

@@ -81,7 +81,11 @@ class AboutMeDesktop extends StatelessWidget {
               textAlign: TextAlign.center,
               'By the way, I have a pretty good knowledge of English...',
               style: GoogleFonts.inter(textStyle: const TextStyle(color: Colors.grey)),
-            )
+            ),
+               const SizedBox(
+              height: 40,
+            ),
+            const DownloadResumeButtonWidget()
           ],
         ),
       ),
@@ -149,7 +153,11 @@ class AboutMeTablet extends StatelessWidget {
               textAlign: TextAlign.center,
               'By the way, I have a pretty good knowledge of English...',
               style: GoogleFonts.inter(textStyle: const TextStyle(color: Colors.grey)),
-            )
+            ),
+               const SizedBox(
+              height: 40,
+            ),
+            const DownloadResumeButtonWidget()
           ],
         ),
       ),
@@ -177,13 +185,13 @@ class AboutMeMobile extends StatelessWidget {
                 style: GoogleFonts.inter(
                   textStyle: const TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 50,
+                    fontSize: 52,
                     color: AppColors.white,
                   ),
                 )),
             GradientText(
               'Get to know me',
-              style: GoogleFonts.inter(textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+              style: GoogleFonts.inter(textStyle: const TextStyle(fontSize: 19, fontWeight: FontWeight.w600)),
               colors: AppColors.gradientText,
             ),
             const SizedBox(
@@ -194,7 +202,7 @@ class AboutMeMobile extends StatelessWidget {
                 style: GoogleFonts.inter(
                   textStyle: const TextStyle(
                     fontWeight: FontWeight.w500,
-                    fontSize: 19,
+                    fontSize: 24,
                     color: AppColors.aboutMeText,
                   ),
                 )),
@@ -203,20 +211,20 @@ class AboutMeMobile extends StatelessWidget {
             ),
             Text(aboutMeTextPartTwoMobile,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.inter(textStyle: const TextStyle(fontWeight: FontWeight.w500, fontSize: 19, color: AppColors.aboutMeText))),
+                style: GoogleFonts.inter(textStyle: const TextStyle(fontWeight: FontWeight.w500, fontSize: 24, color: AppColors.aboutMeText))),
             const SizedBox(
               height: 20,
             ),
             Text(aboutMeTextPartThreeMobile,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.inter(textStyle: const TextStyle(fontWeight: FontWeight.w500, fontSize: 19, color: AppColors.aboutMeText))),
+                style: GoogleFonts.inter(textStyle: const TextStyle(fontWeight: FontWeight.w500, fontSize: 24, color: AppColors.aboutMeText))),
             const SizedBox(
               height: 30,
             ),
             Text(
               textAlign: TextAlign.center,
               'By the way, I have a pretty good knowledge of English...',
-              style: GoogleFonts.inter(textStyle: const TextStyle(color: Colors.grey, fontSize: 16,)),
+              style: GoogleFonts.inter(textStyle: const TextStyle(color: Colors.grey, fontSize: 19,)),
             ),
             const SizedBox(
               height: 40,

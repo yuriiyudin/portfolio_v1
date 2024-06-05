@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -48,7 +49,21 @@ class MainSectionDesktop extends StatelessWidget {
             const SizedBox(
               height: 137,
             ),
-            Image.asset(AppAssets.avatar),
+            CircleAvatar(
+              radius: 107,
+              backgroundColor: Color.fromARGB(255, 37, 166, 195),
+              child: CircleAvatar(
+                radius: 105,
+                backgroundImage: AssetImage(AppAssets.avatar),
+                child: Container(
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage(AppAssets.avatar),
+                          fit: BoxFit.contain,
+                        ))),
+              ),
+            ),
             Text(
               'Yurii Yudin',
               style: GoogleFonts.poppins(textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 63, color: AppColors.white)),
@@ -101,7 +116,21 @@ class MainSectionTablet extends StatelessWidget {
             const SizedBox(
               height: 137,
             ),
-            Image.asset(AppAssets.avatar),
+            CircleAvatar(
+              radius: 107,
+              backgroundColor: Color.fromARGB(255, 37, 166, 195),
+              child: CircleAvatar(
+                radius: 105,
+                backgroundImage: AssetImage(AppAssets.avatar),
+                child: Container(
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage(AppAssets.avatar),
+                          fit: BoxFit.contain,
+                        ))),
+              ),
+            ),
             Text(
               'Yurii Yudin',
               style: GoogleFonts.poppins(textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 63, color: AppColors.white)),
@@ -156,7 +185,21 @@ class MainSectionMobile extends StatelessWidget {
       child: FittedBox(
         child: Column(
           children: [
-            Image.asset(AppAssets.avatar),
+            CircleAvatar(
+              radius: 107,
+              backgroundColor: Color.fromARGB(255, 37, 166, 195),
+              child: CircleAvatar(
+                radius: 105,
+                backgroundImage: AssetImage(AppAssets.avatar),
+                child: Container(
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage(AppAssets.avatar),
+                          fit: BoxFit.contain,
+                        ))),
+              ),
+            ),
             Text(
               'Yurii Yudin',
               style: GoogleFonts.poppins(textStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 63, color: AppColors.white)),
