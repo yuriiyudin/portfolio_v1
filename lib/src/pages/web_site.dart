@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:glassmorphism/glassmorphism.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:yudin_v2/src/data/menu_items.dart';
@@ -32,7 +33,7 @@ class _WebSiteState extends State<WebSite> {
     const MyServicesLayout(),
     const ProjectsGridLayout(),
     ContactFormLayout(itemScrollController: itemScrollController),
-    const Divider(),
+ 
     const SocialNetworkSectionLayout(),
   ];
 
@@ -44,8 +45,6 @@ class _WebSiteState extends State<WebSite> {
   }
 
   int currentStatePageIndex = 0;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -93,15 +92,18 @@ class _WebSiteState extends State<WebSite> {
 
       //============== SCROLLABLE LIST VIEW  MAIN PAGE=======================
       body: Center(
-        child: ScrollablePositionedList.builder(
-          itemCount: pages.length,
-          itemBuilder: (context, index) {
-            return pages[index];
-          },
-          itemScrollController: itemScrollController,
-          scrollOffsetController: scrollOffsetController,
-          itemPositionsListener: itemPositionsListener,
-          scrollOffsetListener: scrollOffsetListener,
+        child: SizedBox(
+          width: 1269,
+          child: ScrollablePositionedList.builder(
+            itemCount: pages.length,
+            itemBuilder: (context, index) {
+              return pages[index];
+            },
+            itemScrollController: itemScrollController,
+            scrollOffsetController: scrollOffsetController,
+            itemPositionsListener: itemPositionsListener,
+            scrollOffsetListener: scrollOffsetListener,
+          ),
         ),
       ),
     );
@@ -111,22 +113,47 @@ class _WebSiteState extends State<WebSite> {
   Drawer navigationBarMobile() {
     return Drawer(
       width: 250,
-      backgroundColor: AppColors.drawerBackground,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const SizedBox(height: 30,),
-          ...List.generate(menuItemsMobile.length, (index) {
-            return MenuItemButtonWidgetMobile(
-              tapButtonFnc: () => tapMenuItem(index),
-              currentStatePageindex: currentStatePageIndex,
-              itemScrollController: itemScrollController,
-              listGenerateIndex: index,
-              title: menuItemsMobile[index].title.toUpperCase(),
-            );
-          }),
-        ],
+      backgroundColor: Colors.transparent,
+      child: GlassmorphicContainer(
+        width: 350,
+        height: double.infinity,
+        borderRadius: 20,
+        blur: 15,
+        alignment: Alignment.topCenter,
+        border: 2,
+        linearGradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
+          const Color(0xFFffffff).withOpacity(0.1),
+          AppColors.drawerBackground.withOpacity(0.3)
+        ], stops: const [
+          0.1,
+          1,
+        ]),
+        borderGradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.transparent,
+            Colors.transparent,
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const SizedBox(
+              height: 30,
+            ),
+            ...List.generate(menuItemsMobile.length, (index) {
+              return MenuItemButtonWidgetMobile(
+                tapButtonFnc: () => tapMenuItem(index),
+                currentStatePageindex: currentStatePageIndex,
+                itemScrollController: itemScrollController,
+                listGenerateIndex: index,
+                title: menuItemsMobile[index].title.toUpperCase(),
+              );
+            }),
+          ],
+        ),
       ),
     );
   }

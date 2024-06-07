@@ -31,49 +31,60 @@ class SocialNetworkSectionDesktop extends StatelessWidget {
     return Container(
       width: 1269,
       margin: const EdgeInsets.symmetric(horizontal: 149, vertical: 40),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
         children: [
-          const Text(
-            '® 2024 All right Reserver',
-            style: TextStyle(fontSize: 16, color: AppColors.allRighstColor),
+          Container(
+            margin: EdgeInsets.only(bottom: 30),
+            width: 1000,
+            color: Colors.grey,
+            height: 1,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(
-                AppAssets.inIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
+              const Text(
+                '® 2024 All right Reserver',
+                style: TextStyle(fontSize: 16, color: AppColors.allRighstColor),
               ),
-              Image.asset(
-                AppAssets.ballIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
-              ),
-              Image.asset(
-                AppAssets.facebookIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
-              ),
-              Image.asset(
-                AppAssets.instaIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
-              ),
-              Image.asset(
-                AppAssets.twitterIcon,
-                width: 32,
-              ).upEffect(),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset(
+                    AppAssets.inIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ),
+                  Image.asset(
+                    AppAssets.ballIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ),
+                  Image.asset(
+                    AppAssets.facebookIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ),
+                  Image.asset(
+                    AppAssets.instaIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ),
+                  Image.asset(
+                    AppAssets.twitterIcon,
+                    width: 32,
+                  ).upEffect(),
+                ],
+              )
             ],
-          )
+          ),
         ],
       ),
     );
@@ -92,49 +103,59 @@ class SocialNetworkSectionTablet extends StatelessWidget {
     return Container(
       width: 1269,
       margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
         children: [
-          const Text(
-            '® 2024 All right Reserver',
-            style: TextStyle(fontSize: 16, color: AppColors.allRighstColor),
+          Container(
+            margin: EdgeInsets.only(bottom: 30),
+            width: 1000,
+            color: Colors.grey,
+            height: 1,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(
-                AppAssets.inIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
+              const Text(
+                '® 2024 All right Reserver',
+                style: TextStyle(fontSize: 16, color: AppColors.allRighstColor),
               ),
-              Image.asset(
-                AppAssets.ballIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
-              ).upEffect(),
-              Image.asset(
-                AppAssets.facebookIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
-              ),
-              Image.asset(
-                AppAssets.instaIcon,
-                width: 32,
-              ).upEffect(),
-              const SizedBox(
-                width: 21,
-              ),
-              Image.asset(
-                AppAssets.twitterIcon,
-                width: 32,
-              ).upEffect(),
+              Row(
+                children: [
+                  Image.asset(
+                    AppAssets.inIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ),
+                  Image.asset(
+                    AppAssets.ballIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ).upEffect(),
+                  Image.asset(
+                    AppAssets.facebookIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ),
+                  Image.asset(
+                    AppAssets.instaIcon,
+                    width: 32,
+                  ).upEffect(),
+                  const SizedBox(
+                    width: 21,
+                  ),
+                  Image.asset(
+                    AppAssets.twitterIcon,
+                    width: 32,
+                  ).upEffect(),
+                ],
+              )
             ],
-          )
+          ),
         ],
       ),
     );
@@ -155,6 +176,12 @@ class SocialNetworkSectionMobile extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          Container(
+            margin: EdgeInsets.only(bottom: 30),
+            width: 1000,
+            color: Colors.grey,
+            height: 1,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -192,8 +219,10 @@ class SocialNetworkSectionMobile extends StatelessWidget {
               ).upEffect(),
             ],
           ),
-          const SizedBox(height: 32,),
-               const Text(
+          const SizedBox(
+            height: 32,
+          ),
+          const Text(
             '® 2024 All right Reservered',
             style: TextStyle(fontSize: 16, color: AppColors.allRighstColor),
           ),
