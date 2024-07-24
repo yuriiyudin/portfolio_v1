@@ -1,4 +1,4 @@
-# Developer Potfolio -  Pet Project variant #1
+# Developer Potfolio -  Pet Project variant #1 PURE FLUTTER
 
 https://yuriiyudin.github.io/portfolio_v1/
 
